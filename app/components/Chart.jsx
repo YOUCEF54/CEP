@@ -114,11 +114,11 @@ export default function CardLineChart() {
 
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-blueGray-700">
-        <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
+      <div className="relative flex flex-col min-w-0 break-words bg-black mb-6 shadow-lg rounded-lg bg-blueGray-700">
+        <div className="rounded-t-lg mb-0 px-4 py-3 bg--600">
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
-              <h6 className="uppercase text-white mb-1 text-xs font-semibold">
+              <h6 className="uppercase  mb-1 text-xs font-semibold text-white bg-blue-700 w-fit px-2 py-1  rounded-full">
                 Overview
               </h6>
               <h2 className="text-white text-xl font-semibold">Sales value</h2>
@@ -127,7 +127,7 @@ export default function CardLineChart() {
         </div>
         <div className="p-4 flex-auto ">
           {/* Chart */}
-          <div className="relative h-[25rem] ">
+          <div className="relative h-[25rem]">
             <canvas id="line-chart"></canvas>
           </div>
         </div>

@@ -17,7 +17,7 @@ var list = []
   return (
     <main className="">
       <div className=" text-center mt-10 font-bold text-3xl">CLOTHES WEBSITE</div>
-      <div className="bg-black p-4 m-4 rounded-lg">
+      <div className="p-4 m-4 rounded-lg ">
         <Chart/>
       </div>
       <div className="grid grid-cols-2 gap-6  max-xl:grid-cols-1 justify-between p-24">
