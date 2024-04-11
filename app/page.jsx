@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import Post from "./components/Post"
+import Chart from "./components/Chart"
 import { array } from "prop-types";
 
 
@@ -14,8 +15,11 @@ var list = []
 
   var list = [0,1,2,3,4,5,6,7]
   return (
-    <main>
+    <main className="">
       <div className=" text-center mt-10 font-bold text-3xl">CLOTHES WEBSITE</div>
+      <div className="bg-black p-4 m-4 rounded-lg">
+        <Chart/>
+      </div>
       <div className="grid grid-cols-2 gap-6  max-xl:grid-cols-1 justify-between p-24">
         <div className="bg-gray-100 border border-gray-300 rounded-md w-full" >
           <div className="m-4 p-4 bg-white rounded-md border border-gray-300">This is a Clothes vending website</div>
