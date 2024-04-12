@@ -1,6 +1,8 @@
 import {motion,useAnimate,usePresence} from 'framer-motion'
 import PropTypes from 'prop-types';
 
+
+
 import { useEffect } from "react";
 export default function Post({post, index}){
     const [isPresent,safeToRemove] = usePresence()
@@ -9,7 +11,7 @@ export default function Post({post, index}){
     useEffect(()=>{
         if(isPresent){
             const enterAnimation = async() =>{
-                await animate(scope.current,{opacity:[0,1]},{duration:0.5 , delay:0.2*index})
+                await animate(scope.current,{opacity:[0,1]},{y:75},{duration:0.5 , delay:0.2*index})
             }
             enterAnimation()
         }else{

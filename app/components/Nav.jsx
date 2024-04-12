@@ -4,7 +4,6 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { CgArrowTopRight } from 'react-icons/cg';
 import Link from 'next/link';
-import Logo from"@/public/Logo2024.png";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
 
@@ -33,7 +32,7 @@ export default function Example() {
     <Disclosure as="nav" className=" pt-3 ">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
             <div className="flex h-16 justify-between">
               {/* <div className="flex justify-between"> */}
               <div className="flex justify-between items-center h-full w-full px-6 ">

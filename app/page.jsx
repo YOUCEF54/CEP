@@ -3,7 +3,8 @@ import Image from "next/image";
 import Post from "./components/Post"
 import Chart from "./components/Chart"
 import { array } from "prop-types";
-
+import Lottie from "lottie-react"
+import animationdata from "../public/animation.json"
 
 export default function Home() {
 var list = []
@@ -16,7 +17,15 @@ var list = []
   var list = [0,1,2,3,4,5,6,7]
   return (
     <main className="">
-      <div className=" text-center mt-10 font-bold text-3xl">CLOTHES WEBSITE</div>
+      <div className=" bg-blue-500 py-2  mt-1 text-center text-white font-bold text-3xl">CLOTHES WEBSITE</div>
+      <div className=" bg-blue-50 px-10 m-auto flex  justify-between ">
+        <div className="mt-[5rem] mx-6 w-[50vw]">
+          <h1 className="font-bold text-4xl">Welcom to your shopieng clothes store.</h1>
+          <p className=" font-thin mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit aut vel voluptates, veniam quaerat necessitatibus impedit magnam, dolorem eligendi illum nihil deserunt illo dolores quas! Consequatur obcaecati, deleniti numquam facilis sit labore?</p>
+          <button className="font-thin  my-2 mt-4 px-2 py-1 rounded-md border-[1.5px] border-gray-700">Shop Now!</button>
+        </div>
+        <Lottie className=" w-[50vw]" animationData={animationdata}/>
+      </div>
       <div className="p-4 m-4 rounded-lg ">
         <Chart/>
       </div>
@@ -40,7 +49,6 @@ var list = []
         </div>
       </div>
       
-    
     </main>
   );
 }
