@@ -29,15 +29,15 @@ export default function Example() {
     {name: "French"},
     {name: "Spanish"}]
   return (
-    <Disclosure as="nav" className=" pt-3 ">
+    <Disclosure as="nav" className="">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8   ">
             <div className="flex h-16 justify-between">
               {/* <div className="flex justify-between"> */}
               <div className="flex justify-between items-center h-full w-full px-6 ">
 
-                <div className="flex  font-bold text-3xl flex-shrink-0 items-center ">
+                <div className="flex font-roboto  font-bold text-3xl flex-shrink-0 items-center ">
                     Logo
                 {/* <Image
                     src={Logo}
